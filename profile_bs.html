@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jspiders Dashboard</title>
+    <link rel="stylesheet" href="mdb/css/bootstrap.css">
+    <link rel="stylesheet" href="mdb/css/mdb.css">
+    <link rel="stylesheet" href="../assignment/fontawesome-free-6.4.2-web/css/all.css">
+    <style>
+        .bg-info{
+          background:  linear-gradient(45deg, rgb(73, 72, 72), rgb(20, 17, 17));
+}
+        
+             .bg-dark{
+    background: linear-gradient(45deg, rgb(73, 72, 72), rgb(20, 17, 17));
+}
+
+.dropdown-item:hover{
+    background-color: rgb(71, 66, 66);
+    color: white !important;
+}
+.card-footer{
+    color: rgb(60, 58, 58);
+}
+.card-footer .fa:hover{
+ cursor: pointer;   
+}
+.bg-secondary{
+    background: linear-gradient(45deg,rgb(0, 94, 0),black);
+}
+.bg-primary{
+    background: linear-gradient(45deg,red,black );
+}
+.bg-dark{
+    background: linear-gradient(45deg,black,rgb(47, 47, 161));
+}
+
+.bg-danger{
+    background: linear-gradient(45deg,black,red);
+}
+    </style>
+</head>
+<body>
+  <!-- --- Navbar Starts--- -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand text-warning">
+            <i class="fa fa-snowflake pr-2"></i>Jspiders
+        </a>
+    
+    <button class="navbar-toggler" data-target="#link" data-toggle="collapse">
+        <span class="navbar-toggler-icon">
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="link">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="mainjsp_bs.html" class="nav-link">
+                    <i class="fa fa-chart-bar pr-2 text-muted"></i>
+                    Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="tasks_bs.html" class="nav-link">
+                    <i class="fa fa-list pr-2 text-muted"></i>Tasks</a>
+            </li>
+            <li class="nav-item">
+                <a href="category_bs.html" class="nav-link">
+                    <i class="fa fa-sitemap pr-2 text-muted"></i>Categories</a>
+            </li>
+            <li class="nav-item">
+                <a href="Employees_bs.html" class="nav-link">
+                    <i class="fa fa-users pr-2 text-muted"></i>Employees</a>
+            </li>
+        </ul>
+        
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                
+                    <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-sign-in pr-2 text-muted"></i>JUSTIN</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-user-circle pr-2"></i>Profile</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-cogs pr-2"></i>Settings</a>
+                          </div>
+                
+            </li>
+            <li class="nav-item">
+                <a href="Login.html" class="nav-link">
+                    <i class="fa fa-sign-out pr-2 text-muted"></i>LogOut</a>
+            </li>
+           
+        </ul>           
+    </div>
+
+  
+</div>
+    
+</nav>
+<!-- --- Navbar Ends--- -->
+
+<!-- --- Dashbord pic Starts--- -->
+<div class="container-fluid">
+    <div class="row bg-secondary">
+        <div class="col">
+            <a href="mainjsp_bs.html" class="navbar-brand text-white pl-4" style="font-size: 29px;">
+                <i class="fa fa-user-circle text-muted pr-2 "></i>Profile
+            </a>
+        </div>
+    </div>
+
+
+</div>
+<div class="container-fluid mt-2">
+    <div class="row justify-content-around">
+        <div class="col-lg-4 bg-primary m-2 p-2 text-center">
+            <a class="text-white " href="" >
+                <i class="fa fa-circle-arrow-left pr-2" ></i>DASHBOARD</a>
+        </div>
+        <div class="col-lg-3 bg-primary m-2 p-2 text-center">
+            <a class="text-white " href="" data-target="#update" data-toggle="modal">
+                <i class="fa fa-lock pr-2"></i>UPDATE PASSWORD</a>
+        </div>
+        <div class="col-lg-4 bg-primary m-2 p-2 text-center">
+            <a class="text-white " href="">
+                <i class="fa fa-times-circle pr-2"></i>DELETE ACCOUNT</a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="modal" id="update">
+    <div class="modal-dialog">
+        <div class="model-content">
+            <div class="modal-header bg-danger">
+                <h5 class="text-white">
+                 UPDATE PASSWORD
+                </h5>
+                <button class="close" data-dismiss="modal">
+                 <i class="fa fa-times-circle"></i>
+             </button>
+             </div> 
+
+             <!-- Modal Starts -->
+             <div class="modal-body bg-info">
+                <form action="">
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Enter Old password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Enter New password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm password">
+                    </div>
+                    <div class="form-group text-center">
+                        <button class=" ml-2 btn btn-sm btn-primary">Update</button>
+                        <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="tasks">Close</button>
+                    </div>
+                </form>
+
+             </div>
+             <!-- Modal Ends -->
+
+
+        </div>
+
+    </div>
+</div>
+
+<!-- --- About Me Details Starts --- -->
+<section class="p-2">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h2>About Me</h2>
+                </div>
+                <div class="card-body bg-light">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h2>JUSTIN JOHNSON</h2>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui atque cumque illo nam beatae deleniti obcaecati aliquid, ducimus odit ad commodi sint, id porro culpa eos suscipit vero quibusdam sequi.</p>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui atque cumque illo nam beatae deleniti obcaecati aliquid, ducimus odit ad commodi sint, id porro culpa eos suscipit vero quibusdam sequi.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-footer bg-dark text-white">
+                    <h5>
+                        Thank You
+                        <i class="fa fa-smile"></i>
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="D:\HTML\HTML_1\HTML_images\assests_images\jus7.png" alt="remote image" class="p-image" height="265px" width="370px">
+            <div class="mt-2">
+
+                <a href="" class="btn btn-block  bg-secondary text-white">
+                    <i class="fa fa-pen pr-2"></i>EDIT PROFILE</a>
+            </div>
+            <div class="mt-2">
+
+                <a href="" class="btn btn-block  bg-danger text-white">
+                    <i class="fa fa-trash pr-2"></i>EDIT PROFILE</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --- Footer Section Starts ---- -->
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright bg-dark text-center py-3">© 2023 Copyright:
+        <a href="/"> Jspiders.com</a>
+        <p>All Rights Reserved!</p>
+    </div>
+    
+</footer>
+<!-- --- Footer Section Ends ---- -->
+<!-- --- Dashbord pic Ends--- -->
+
+ <!-- --- script code --- -->
+ <script src="mdb/js/jquery.js"></script>
+ <script src="mdb/js/popper.js"></script>
+ <script src="mdb/js/bootstrap.js"></script>
+ <script src="mdb/js/mdb.js"></script>
+</body>
+</html>

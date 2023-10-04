@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+    <link rel="stylesheet" href="mdb/css/bootstrap.css">
+    <link rel="stylesheet" href="mdb/css/mdb.css">
+    <link rel="stylesheet" href="../assignment/fontawesome-free-6.4.2-web/css/all.css">
+    <style>
+   .bg-primary{
+            background: linear-gradient(45deg,black,red);
+        }
+    </style>
+</head>
+<body>
+    <div class="contaier-fluid mt-4 kk">
+        <div class="row">
+            <div class="col-md-5 m-auto animated slideInLeft">
+                <a href="">
+                <div class="card">
+                    <div class="card-header bg-primary">
+                        <h3 class="text-white">
+                            Add Task
+                        </h3>
+                    </div>
+                    <!-- --- Card Body ---- -->
+                    <div class="card-body bg-light">
+                        <form action="">
+                            <div class="form-group">
+                                <label class="form-check-label">Task</label>
+                                <input type="text" placeholder="Enter Task" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-check-label">Category</label>
+                                <select class="form-control">
+                                    <option>Select Category</option>
+                                    <option>Development</option>
+                                    <option>Testing</option>
+                                    <option>Bug Fixing</option>
+                                    <option>Production</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-check-label">Image Upload</label>
+                                <input type="file" placeholder="Choose File" class="form-control">
+                            </div> 
+                            <div class="form-group">
+                                <label class="form-check-label">Description</label>
+                                <input type="text" placeholder="Description" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+
+                       <!-- --- Card Body ---- -->
+                       <div class="text-center">
+                            <button type="submit" class="btn btn-sm btn-outline-white bg-primary">Submit</button>
+                            <button type="reset" class="btn btn-sm btn-outline-white bg-primary">Reset</button>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="mdb/js/jquery.js"></script>
+    <script src="mdb/js/popper.js"></script>
+    <script src="mdb/js/bootstrap.js"></script>
+    <script src="mdb/js/mdb.js"></script>
+</body>
+</html>
